@@ -19,7 +19,7 @@ module Control_Unit_Top(
 logic [ALU_OP_WIDTH-1:0] ALUOp;
 
 //assign PCSrc = Branch && ALUResult[0]; // Assuming ALUResult[0] is the Zero flag for branch comparison
-assign PCSrc = Zero & Branch;
+//assign PCSrc = Zero & Branch;
 
 main_decoder decoder(
     .Op(Op),

@@ -32,19 +32,5 @@ localparam BGE  = 3'b101;   // Branch if Greater or Equal
 localparam BLTU = 3'b110;   // Branch if Less Than Unsigned
 localparam BGEU = 3'b111;   // Branch if Greater or Equal Unsigned
 
-// Branch Predictor Parameters
-localparam BHT_SIZE = 16;
-localparam BHT_INDEX_WIDTH = 4; // log2(BHT_SIZE)
-localparam BTB_SIZE = 16;
-localparam BTB_INDEX_WIDTH = 4; // log2(BTB_SIZE)
-localparam BTB_TAG_WIDTH = 24; // Tag width for BTB entries, corresponds to PC[31:8]
-localparam PREDICTOR_BITS = 2;  // 1 for 1-bit, 2 for 2-bit (Smith counter)
-
-// 2-bit Smith counter states
-localparam S_NT = 2'b00;  // Strongly Not Taken
-localparam W_NT = 2'b01;  // Weakly Not Taken
-localparam W_T  = 2'b10;  // Weakly Taken
-localparam S_T  = 2'b11;  // Strongly Taken
-
 
 endpackage

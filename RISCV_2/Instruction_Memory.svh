@@ -12,6 +12,7 @@ logic[DATA_WIDTH-1:0] mem[MEMORY_SIZE-1:0]; //this can store 1024 instructions o
 assign RDd = (rst)? mem[Aa[ADDR_WIDTH-1:2]] : {DATA_WIDTH{1'b0}}; // Output the instruction at the given address, word-aligned
 
 initial begin : memfile
+    @(posedge clk);
     $readmemh("memfile.hex", mem);
 end
 
