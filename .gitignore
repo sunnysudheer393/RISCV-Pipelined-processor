@@ -15,6 +15,8 @@ RISCV_2/RISCV.svg
 RISCV_2/VERIFICATION_CHECKLIST.md
 RISCV_2/VISUAL_SUMMARY.md
 RISCV_2/branch_prediction_plan.md
+RISCV_2/BranchComparator.sv
+RISCV_2/cpu_parameters.sv
 
 
 
